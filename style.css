@@ -2,16 +2,16 @@
    VARIABLES GLOBALES
    ============================= */
 :root {
-  --bg: linear-gradient(135deg, #a6617c, #1313e1); 
+  --bg: linear-gradient(135deg, #8b4513, #556b27); 
   /* 🎨 Fondo con degradado oscuro para dar más riqueza visual 
      que un color plano. Ayuda a que el "vidrio" se note más. */
         
-  --text: #ffffff; /* Color de texto principal (blanco, buen contraste). */
-  --muted: #e0e0e0; /* Texto secundario en gris claro. */
+  --text: #f8f5f0; /* Color de texto principal (blanco, buen contraste). */
+  --muted: #d6c9b5; /* Texto secundario en gris claro. */
 
   /* Colores de acento para botones, enlaces y detalles. */
-  --accent-1: #f97316; /* Naranja brillante. */
-  --accent-2: #ef4444; /* Rojo cálido. */
+  --accent-1: #f4a300; /* Naranja brillante. */
+  --accent-2: #c72c2c; /* Rojo cálido. */
 
   /* 🎭 Glassmorphism (parámetros base) */
   --card: rgba(255,255,255,0.15); 
@@ -107,7 +107,7 @@ a {
 .hero {
   text-align: center; /* Centra el texto dentro. */
   padding: 100px 20px; /* Mucho espacio para destacar. */
-  background: url('https://images.pexels.com/photos/1058277/pexels-photo-1058277.jpeg') 
+  background: "imagenes/restaurante.jpg" 
               center/cover no-repeat; 
   /* Imagen de fondo centrada y recortada para cubrir toda la sección. */
 
@@ -231,7 +231,8 @@ a {
 }
 
 .form button {
-  background: #d32f2f;
+  width: 100%;
+  background: var(--accent-2);
   color: #fff;
   font-weight: bold;
   cursor: pointer;
@@ -239,5 +240,10 @@ a {
 }
 
 .form button:hover {
-  background: #b71c1c;
+  background: #a32121;
+}
+
+.card form button.btn{
+  width: 100%;
+  display:block;
 }
